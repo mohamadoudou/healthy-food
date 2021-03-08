@@ -82,6 +82,22 @@ input[type="button"]{
     height: 4rem;
 }
  
+.section{
+    text-align: center;
+    margin-top: 3rem;
+
+}
+.section__text{
+    line-height: 2rem;
+    margin: 0 1.5rem;
+}
+.section__image{
+    background: url('/images/charles-deluvio-D-vDQMTfAAU-unsplash.jpg');
+    background-size: cover;
+    margin-top: 3rem;
+    width: 100%;
+    height: 22rem;
+}
 @media (min-width:730px){
     .hero{
         text-align: left;
