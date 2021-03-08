@@ -92,9 +92,8 @@ input[type="button"]{
     margin: 0 1.5rem;
 }
 .section__image{
-    background: url('/images/charles-deluvio-D-vDQMTfAAU-unsplash.jpg');
-    background-size: cover;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
     height: 22rem;
 }
@@ -132,6 +131,21 @@ input[type="button"]{
         margin: .1rem 0rem 2rem 0rem;
     }
 }
+
+@media (min-width:920px){
+    .section{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+     .section__image{
+        flex: .5;
+    }
+    .section__text{
+        flex: .5;
+        align-self: center;
+    }
+
+}
 @media (min-width:1275px){
     .hero{
         background-position: 10px -5px;
@@ -140,5 +154,12 @@ input[type="button"]{
     form{
      width:50%;
     }
-
+    .section{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .section__image{
+        height: 26;
+    }
 }
