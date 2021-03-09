@@ -18,7 +18,7 @@
             <input type="text" name="city" id="city"/>
             <p>Example:"San Diego"</p>
             </div>
-            <input type="button" value="Find Food Now"/>
+            <input type="button" value="Find Food Now" id="btn"/>
         </form>
     </div>    
     <section class="section">
@@ -28,6 +28,11 @@
         </div>
         <img src="./images/charles-deluvio-D-vDQMTfAAU-unsplash.jpg" class="section__image" alt="bool magic"/>
     </section>
-    <script></script>
+    <script>
+        let btn=document.getElementById('btn')
+        btn.addEventListener('click',()=>{
+            console.log('hello')
+        })
+    </script>
 </body>
 </html>
