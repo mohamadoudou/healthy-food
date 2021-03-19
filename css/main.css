@@ -24,23 +24,39 @@ body{
     font-weight: bold;
     color: white;
     margin-top: 6.25rem;
+    animation: top-to-down ease-in-out 1s;
 }
 .hero span{
     font-size: 1.5rem;
     text-transform: uppercase;
     display: block;
+    animation: top-to-down ease-in-out 1s;
 }
 
 .hero__p{
     font-weight: bold;
     color: white;
     margin-top: 3.4rem;
+    animation: top-to-down ease-in-out 1s;
 }
 
 form{
     background-color: white;
     padding: 2rem;
     margin: 4.15rem -1rem 3.2rem -1rem;
+    animation: top-to-down ease-in-out 1s;
+}
+
+@keyframes top-to-down{
+    0%{
+        transform: translateY(-30%);
+        opacity: 0;
+  
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .form__group1{
@@ -88,6 +104,10 @@ input[type="button"]:hover{
     cursor: pointer;
 }
  
+.overlay{
+    position: absolute;
+    background-color: grey;
+}
 .section{
     text-align: center;
     margin-top: 3rem;
