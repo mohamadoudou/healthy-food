@@ -82,6 +82,11 @@ input[type="button"]{
     height: 4rem;
     outline: none;
 }
+
+input[type="button"]:hover{
+    background-color: #cc7b09;
+    cursor: pointer;
+}
  
 .section{
     text-align: center;
