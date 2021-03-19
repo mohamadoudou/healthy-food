@@ -8,6 +8,7 @@
     <title>Food</title>
 </head>
 <body>
+    <div class="overlay" id="overlay"> <h2>Searching now...</h2>></div>
     <div class="hero">
         <a href="#">yummy.eats</a>
         <h1><span>The Healthy</span> Eating Experience</h1>
@@ -30,8 +31,13 @@
     </section>
     <script>
         let btn=document.getElementById('btn')
+        let overlay = document.getElementById('overlay')
         btn.addEventListener('click',()=>{
-            console.log('hello')
+             overlay.style.display='grid'
+             setTimeout(()=>{
+                 overlay.style.display='none'
+                 btn.removeEventListener('click',()=>{})
+             },4000)
         })
     </script>
 </body>
