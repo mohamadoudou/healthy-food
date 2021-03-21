@@ -27,10 +27,21 @@ body{
     animation: top-to-down ease-in-out 1s;
 }
 .hero span{
+    position: relative;
     font-size: 1.5rem;
     text-transform: uppercase;
     display: block;
     animation: top-to-down ease-in-out 1s;
+}
+
+.hero span::before{
+    content: '';
+    position: absolute;
+    bottom: 0rem;
+    background-color: rgb(19, 235, 199);
+    width: 6.5rem;
+    height: 0.5rem;
+    opacity: 0.8;
 }
 
 .hero__p{
@@ -143,6 +154,18 @@ input[type="button"]:hover{
 .section__text{
     line-height: 2rem;
     margin: 0 1.5rem;
+}
+.section__text h2{
+    position: relative;
+}
+.section__text h2::before{
+    content: '';
+    position: absolute;
+    bottom: 0rem;
+    background-color: rgb(19, 235, 199);
+    width: 11.5rem;
+    height: 0.5rem;
+    opacity: 0.8;
 }
 .section__image{
     margin-top: 1rem;
